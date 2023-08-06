@@ -1,0 +1,58 @@
+@font-face {
+  font-family: lato;
+  src: url("./Lato-Regular.ttf");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body,
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+
+canvas {
+  z-index: -1;
+  background-color: #aa2222;
+}
+
+#logo {
+  width:12vh;
+  z-index: 0;
+  /* position:fixed;
+  top:2rem;
+  left:2rem; */
+}
+
+#me_wrap {
+  position: fixed;
+  bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+  font-weight: bold;
+  font-family: lato;
+  color:#fff;
+}
+
+#me_svg {
+  width: 12vh;
+}
+
+/* #me_who {
+  font-size: 1.2rem;
+} */
