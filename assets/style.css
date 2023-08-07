@@ -41,12 +41,17 @@ canvas {
   font-size:2rem;
 }
 
+#course {
+  position:absolute;
+  z-index: 0;
+  font-size:4.5rem;
+  color:white;
+  margin-top:3rem;
+}
+
 #logo {
   width:12vh;
-  z-index: 0;
-  /* position:fixed;
-  top:2rem;
-  left:2rem; */
+  z-index: 10;
 }
 
 #me_wrap {

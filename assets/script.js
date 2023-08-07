@@ -4,12 +4,13 @@
   let w = (c.width = window.innerWidth);
   let h = (c.height = window.innerHeight) + window.innerHeight * 0.00025;
 
-  function txt() {
-    let t = "GEOMETRY".split("").join(String.fromCharCode(0x2004));
-    ctx.font = "3.5em lato";
-    ctx.fillStyle = "#fff"; // "#ee6666";
-    ctx.fillText(t, (c.width - ctx.measureText(t).width) * 0.5, c.height * 0.55);
-  }
+  // function txt() {
+  //   let t = "GEOMETRY".split("").join(String.fromCharCode(0x2004));
+  //   ctx.font = "3.5em lato";
+  //   // ctx.textShadow = "rgba(255, 162, 0, 0.9) 0px 0px 39px";
+  //   ctx.fillStyle = "#fff"; // "#ee6666";
+  //   ctx.fillText(t, (c.width - ctx.measureText(t).width) * 0.5, c.height * 0.55);
+  // }
 
   let rad = 175,
     til = 1,
@@ -114,7 +115,7 @@
       }
       p = pnxt;
     }
-    txt();
+    // txt();
   }
 
   function add(_x, _y, _z, vx0, vy0, vz0) {
