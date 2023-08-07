@@ -44,9 +44,8 @@ canvas {
 #course {
   position:absolute;
   z-index: 0;
-  font-size:4.5rem;
+  font-size:6rem;
   color:white;
-  margin-top:3rem;
 }
 
 #logo {
