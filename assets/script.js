@@ -6,7 +6,7 @@
 
   function txt() {
     let t = "GEOMETRY".split("").join(String.fromCharCode(0x2004));
-    ctx.font = "3.5em serif";
+    ctx.font = "3.5em lato";
     ctx.fillStyle = "#fff"; // "#ee6666";
     ctx.fillText(t, (c.width - ctx.measureText(t).width) * 0.5, c.height * 0.55);
   }
@@ -63,18 +63,18 @@
     ang = ang + sp + 2 * Math.PI;
     sin = Math.sin(ang);
     cos = Math.cos(ang);
-    // let g = ctx.createRadialGradient(
-    //   c.width,
-    //   c.width,
-    //   0,
-    //   c.height,
-    //   c.height,
-    //   c.width
-    // );
-    // g.addColorStop(0, "hsla(0,0%,80%,1)");
-    // g.addColorStop(0.5, "hsla(0,0%,95%,1)");
-    // g.addColorStop(1, "hsla(255,255%,255%,1)");
-    let g = "#aa2222";
+    let g = ctx.createRadialGradient(
+      c.width,
+      c.width,
+      0,
+      c.height,
+      c.height,
+      c.width
+    );
+    g.addColorStop(0, "#aa222299");
+    g.addColorStop(0.5, "#aa222233");
+    g.addColorStop(1, "#aa222200");
+    // let g = "#aa2222";
     ctx.fillStyle = g;
     ctx.fillRect(0, 0, w, h);
     p = _arr.first;
